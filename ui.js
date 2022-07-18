@@ -12,8 +12,8 @@ class UI {
     this.uiContainer.innerHTML = `
       <div id="down" class="card">
         <div class="flex">
-          <div class="cityname">${dataCurrent.name}</div>
           <img src="http://openweathermap.org/img/wn/${dataCurrent.weather[0].icon}@2x.png" class="img">
+          <div class="cityname">${dataCurrent.name}</div>
         </div>
         <div class="maintemp">${dataCurrent.main.temp} <span style="font-size:25px;">&#8451; ${dataCurrent.weather[0].description}</span></div>
         <div class="minmaxtemp">${dataCurrent.main.temp_min} / ${dataCurrent.main.temp_max}<span>&#8451;</span></div>
