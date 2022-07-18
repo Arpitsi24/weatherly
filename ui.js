@@ -16,14 +16,13 @@ class UI {
           <div class="cityname">${dataCurrent.name}</div>
         </div>
         <div class="maintemp">${dataCurrent.main.temp} <span style="font-size:25px;">&#8451; ${dataCurrent.weather[0].description}</span></div>
-        <div class="minmaxtemp">${dataCurrent.main.temp_min} / ${dataCurrent.main.temp_max}<span>&#8451;</span></div>
         <div class=""></div>
 
         <div style="overflow-x: auto;">
           <table>
             <tr>
-              <td>feels like</td>
-              <td>pressure</td>
+              <td>Feels like</td>
+              <td>Pressure</td>
             </tr>
             <tr>
               <td>${dataCurrent.main.feels_like} <span>&#8451;</span></td>
@@ -31,8 +30,8 @@ class UI {
             </tr>
             <tr><td><p></p></td><td></td></tr><tr><td><p></p></td><td></td></tr>
             <tr>
-              <td>humidity</td>
-              <td>visibility</td>
+              <td>Humidity</td>
+              <td>Visibility</td>
             </tr>
             <tr>
               <td>${dataCurrent.main.humidity} %</td>
@@ -40,8 +39,8 @@ class UI {
             </tr>
             <tr><td><p></p></td><td></td></tr><tr><td><p></p></td><td></td></tr>
             <tr>
-              <td>wind speed</td>
-              <td>cloud cover</td>
+              <td>Wind speed</td>
+              <td>Cloud cover</td>
             </tr>
             <tr>
               <td>${dataCurrent.wind.speed} m / s</td>
@@ -49,12 +48,12 @@ class UI {
             </tr>
             <tr><td><p></p></td><td></td></tr><tr><td><p></p></td><td></td></tr>
             <tr>
-              <td>sunrise</td>
-              <td>sunset</td>
+              <td>Minimum temperature</td>
+              <td>Maximum temperature</td>
             </tr>
             <tr>
-              <td>${dataCurrent.sys.sunrise}</td>
-              <td>${dataCurrent.sys.sunset}</td>
+              <td>${dataCurrent.main.temp_min}<span>&#8451;</span></td>
+              <td>${dataCurrent.main.temp_max}<span>&#8451;</span></td>
             </tr>
 
           </table>
